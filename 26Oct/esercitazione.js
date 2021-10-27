@@ -33,7 +33,7 @@ function calculator(operation, numbers) {
     return total;
 }
 
-let chosenOperation = prompt ("Scegli l'operazione che vuoi effettuare:\n -somma\n -sottrazione\n -moltiplicazione\n -divisione\n -Potenza\n -Radice quadrata")
+let chosenOperation = prompt ("Scegli l'operazione che vuoi effettuare:\n -Somma\n -Sottrazione\n -Moltiplicazione\n -Divisione\n -Potenza\n -Radice quadrata")
 let chosenNumbers = prompt ("Scrivi i due numeri (separati da una virgola) tra cui vuoi effettuare l'operazione. Se hai scelto la radice quadrata, scrivi un solo numero")
 const numbers= chosenNumbers.split(',');
 const array = [];
@@ -48,7 +48,7 @@ for (n of numbers) {
 }
 
 //possibili errori
-if (array.length == 1 && chosenOperation !== "radice") {
+if (array.length == 1 && chosenOperation !== "radice quadrata") {
     console.log(array[0]);
 } else if (array.length > 2) {
     alert("Hai inserito troppi numeri. L'operazione verrà eseguita soltanto tra i primi due numeri")

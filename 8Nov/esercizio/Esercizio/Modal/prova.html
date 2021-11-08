@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Landing page creata da Agnese</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Pagina di bakery">
+        <meta name="keywords" content="bakery, pastry">
+        <meta name="author" content="Agnese Spinella">
+        <meta property="og:title" content="Pagina bakery">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" media="all" href="css/normalize.css">
+        <link rel="stylesheet" media="all" href="css/common.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/9647logo.ico">
+    </head>
+    <body>
+        <!-- header -->
+            <header>
+                <img src="img/logo.png" alt="Bakery" width="150" height="150">
+            </header>
+        <div id="#menu">
+            <nav>
+                <ul class="flex-container-menu">
+                    <li ><a href="#testo" class="navItem">Benvenuti</a></li>
+                    <li ><a href="#vantaggi" class="navItem">Vantaggi</a></li>
+                    <li ><a href="#form" class="navItem">Contattaci</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- hero -->        
+        <div id="hero" > 
+            <picture >
+                <source media="(min-width: 991px )" srcset="img/top-d.jpg"> <!-- sempre meglio caricare di default quella piccola -->
+                <source media="(min-width: 0 )" srcset="img/top-m.jpg">
+                <img src="img/top-m.jpg" alt="Bakery" width="700" height="700">
+            </picture>
+           <!-- <img src="img/top-d.jpg" alt="Belle torte" width="1920" height="750">-->
+        </div>
+
+        <!-- testo -->
+        <div id="testo">
+            <h1> Benvenuti su Bakery</h1>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ducimus maxime optio a neque facilis vero veniam enim quam. Obcaecati suscipit quas rerum laboriosam quam alias deserunt distinctio et est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos minima, vero natus nihil quisquam ut laudantium neque cum in expedita eaque molestiae sequi, error excepturi voluptas numquam soluta.</p>
+            <a href="#form" class="pulsante respiro">Contattaci</a>
+        </div>
+
+        <!-- modale -->
+        <div id="modal" class="disappear">
+            <img class="modal_img" src="https://img.icons8.com/emoji/48/000000/bomb-emoji.png" alt="bomb-emoji">
+            <p>Clicca sul tasto giusto per chiudere questa fastidiosa finestra</p>
+            <div class="modal_buttons">
+                <button id="close"> Chiudi </button>
+                <button id="trap"> Qui non succede nulla!</button>
+            </div>
+        </div>
+
+        <!-- vantaggi -->
+        <div id="vantaggi">
+            <div class="flex-container">
+                <div class="flex-item entrata">
+                    <h2>Vantaggio 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt quasi tempore sint repellat enim dolor itaque nihil ipsam, dolorum repudiandae quidem ad sit, eveniet facere omnis earum voluptas, saepe minima?
+                    </p>
+                </div>
+                <div class="flex-item uscita">
+                    <h2>Vantaggio 2</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quis nihil architecto distinctio! Vero molestias at eum, tenetur dicta aperiam, magni quo repellat necessitatibus, odio quia eos quidem excepturi doloribus!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- form -->
+        <div id="form">
+            <h2>Contattaci</h2>
+            <form id="mioform" name="mioform" action="#">
+                <div class="flex-form">
+                    <div class="inputDiv">
+                        <label for="selezione" > Seleziona Reparto*</label>
+                        <select name="selezione" id="selezione" required>
+                            <option value="" selected disabled hidden>None</option>
+                            <option value="1">None</option>
+                            <option value="2">Commerciale</option>
+                            <option value="3">Sviluppo</option>
+                        </select>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="nome" > Nome e Cognome*</label>
+                        <input type="text" name="nome" id="nome" placeholder="Scrivi qui nome e Cognome" required>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="email" > Email*</label>
+                        <input type="email" name="emai" id="email" placeholder=" Scrivi Email " required>
+                    </div>
+                    <div class="inputDiv larghezza100">
+                        <label for="Commento" >Commento</label>
+                        <textarea name="testoForm" id="Commento" placeholder="Scrivi qui il tuo commento"></textarea>
+                    </div>
+                    <div class="radioDiv">
+                        <p>Accetto l'informativa sulla privacy</p>
+                        <label for="edit-privacy-si">Sì</label>
+                        <input type="radio" id="edit-privacy-si" name="privacy" value="si" checked>
+                        <label for="edit-privacy-no">No</label>
+                        <input type="radio" id="edit-privacy-no" name="privacy" value="no">
+                    </div>
+                    <div class="inputDiv larghezza100">
+                        <input type="submit" name="submitForm" id="submitForm" value="Invia il form" class="pulsante">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <footer>
+            <p>
+                Edgemony P.Iva 12345678911 - Credits by <a href="https://www.linkedin.com/in/agnese-spinella-946121223/" target="_blank"> Agnese Spinella</a>
+            </p>
+        </footer>
+        <script src="js/app.js"></script>
+    </body>
+</html>

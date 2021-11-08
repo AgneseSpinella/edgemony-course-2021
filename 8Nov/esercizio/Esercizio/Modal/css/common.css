@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+    display: block;
+}
+
+a{
+    color: turquoise;
+}
+
+h1 {
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* body */
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20 px;
+    color: #4e3939;
+    line-height: 30px;
+    
+}
+
+
+.pulsante{
+    background:#ee7560;
+    border: 2px #ee7560 solid;
+    color: white;
+    padding:10px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 30px;
+    border-radius: 10px;
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.pulsante:hover{
+    background-color: transparent;
+    color:#ee7560 ;
+}
+
+ /* header */
+header img{
+    margin: 0 auto;
+}
+
+
+header{
+    background: white;
+    padding: 10px 0;
+}
+
+/* menu nav */
+.flex-container-menu {
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    gap: 15px 30px;
+    list-style-type:none;
+}
+
+li::before{
+    content: "|";
+    color: black ;
+    padding: 0 5px 0 0px;
+}
+
+.flex-container-menu .navItem {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20 px;
+    color: #ee7560;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+/* hero */
+#hero {
+    width: 100%;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+/* testo */
+#testo {
+    max-width: 990px;
+    padding: 100px 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#testo h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    line-height: 70px;
+    padding-bottom: 20px;
+    color: #ee7560;
+}
+
+/* modal */
+.modal_img {
+    width: 100px;
+}
+
+
+
+.display {
+    position: fixed;
+    bottom: 250px;
+    right: 290px;
+    width: auto;
+    
+    height: 350px;
+    padding: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color:#fa7c66f1 ;
+    border: 3px dotted  brown;
+    border-radius: 4px;
+    
+    transition: opacity 0.5s;
+}
+
+.disappear {
+    display: none;
+    visibility: hidden;
+}
+
+#modal button {
+    border: darkred solid 2px;
+    border-radius: 3px;
+    margin: 10px 10px 0px;
+    padding: 10px;
+    width: 300px;
+}
+/* vantaggi */
+
+#vantaggi {
+    background-color: rgba(253, 208, 136, 0.931);
+    padding: 100px 50px;
+}
+
+#vantaggi .flex-container {
+    display: flex;
+    justify-content: center;    
+}
+
+#vantaggi .flex-container .flex-item{
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+} 
+
+#vantaggi .flex-container .flex-item h2{
+    font-family: 'Pacifico', cursive;
+    color: #ee7560;
+    padding: 0 0 10px;
+}
+
+/* form */
+#form {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 100px 50px 100px 50px;
+}
+
+#form h2{
+    text-align: center;
+    padding: 0 0 20px;
+    font-family: 'Pacifico', cursive;
+    color: #ee7560;
+    font-size: 40px;
+    line-height: 50px;
+
+}
+
+#form .flex-form{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+#form .flex-form .inputDiv{
+    width: calc(100% / 3);
+    padding: 20px;
+    text-align: center;
+}
+
+
+#form .flex-form .inputDiv.larghezza100{
+    width: 100%;
+}
+ 
+
+#form .flex-form .inputDiv input[type="text"],
+#form .flex-form .inputDiv input[type="email"],
+#form .flex-form .inputDiv select
+{
+    width: 100%;
+    display: block;
+    background:#fafafa;
+    border-radius: 5px;
+    padding: 15px;
+    border:none;
+    font-size: 15px;
+}
+
+#form .flex-form .inputDiv textarea {
+    width: 100%;
+    background:#fafafa;
+    border-radius:5px;
+    padding:15px;
+    resize: none;
+    height: 100px;
+    border:none;
+}
+
+#form .flex-form .inputDiv label{
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    padding: 0 15px 5px;
+}
+
+#form .flex-form label {
+    text-align: left;
+    font-size: 14px;
+    padding: 0 15px 5px;
+}
+
+#form .flex-form .radioDiv{
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+}
+
+#form .flex-form .radioDiv p{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 15px 5px;
+}
+
+
+/* footer  */
+footer{
+    background:black;
+    padding: 100px 50px;
+    text-align: center;
+    color: white;
+    font-size: 12px;    
+} 
+
+
+footer a {
+    color: white;
+}
+
+
+footer a:hover {
+    color:thistle;
+    text-decoration: none;
+}
+
+@media all and (max-width: 990px){
+    
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    header img{
+        width: 100px;
+        height: auto;
+    }
+
+    #testo {
+     padding: 50px 20px;
+    }
+    
+    #testo h1 {
+        font-size: 30px;
+        line-height: 50px;
+        padding-bottom: 10px;
+    }
+    
+    #vantaggi {
+        padding: 50px 20px;
+        }
+    #vantaggi .flex-container{
+        flex-wrap: wrap;
+    }
+
+    #vantaggi .flex-container .flex-item{
+        width: 100%;
+        }
+
+    #form {
+    padding: 50px 20px;
+    }
+
+    #form h2{
+    padding: 0 0 10px 0;
+    font-size: 30px;
+    }
+
+
+    #form .flex-form .inputDiv{
+    padding: 10px 0;
+    width: 100%;
+    }
+
+    footer {
+    padding: 50px 20px;
+    }
+    
+    .flex-container-menu {
+    flex-wrap: wrap;
+    }
+
+    }
+
+    
+    @keyframes slide-in-left {
+        from {
+            transform: translateX(-150%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-right {
+        from {
+            transform: translateX(150%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(-0%);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes breath {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2) ;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+
+.entrata {
+        animation: slide-in-left 4000ms;
+        animation-timing-function:ease-out;
+    }
+
+.uscita {
+    animation: slide-in-right 4000ms;
+    animation-timing-function: ease-out ;
+}
+
+
+.respiro {
+    animation: breath 5000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2 ;
+}
